@@ -100,7 +100,7 @@ function FillPoll() {
               {/* <div className="shadow-2xl bg-primary rounded-lg -mb-8 text-white text-large p-12">
                                 <h4 className="text-4xl font-bold text-center">{poll.name} {poll.voted && `- ${poll.votes} votes`}</h4>
                             </div> */}
-              <Card className="break-words mx-10">
+              <Card className="break-words w-full">
                 <div className="mb-4 bg-primary rounded-lg text-white text-large p-5">
                   <h4 className="text-4xl font-bold text-center">
                     {poll.name} {poll.voted && `- ${poll.votes} votes`}

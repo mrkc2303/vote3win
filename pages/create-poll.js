@@ -193,7 +193,7 @@ function CreatePoll() {
                                         </div>
                                     </div>
                                 </div> */}
-
+{/* 
                 <div className="mb-4">
                   <Label>Poll Type</Label>
                   <span className="mr-4">
@@ -217,7 +217,7 @@ function CreatePoll() {
                     />{" "}
                     Paid
                   </span>
-                </div>
+                </div> */}
                 <Transition
                   show={form.pollType === "paid"}
                   enter="transition-opacity duration-75"

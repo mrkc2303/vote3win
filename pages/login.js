@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import Button from "../components/Button";
 import logo from "../public/svg/logo.svg";
+import people_voting from "../public/svg/people_voting.png";
 import Image from "next/image";
 import { CheckCircle } from "react-feather";
 import Link from "next/link";
@@ -59,21 +60,17 @@ function Login() {
       <Head>
         <title>Vote3Win | Login</title>
       </Head>
-      <div className="grid xl:grid-cols-2 gap-40 pt-24 px-32">
-        <div className="pb-10 xl:px-10 mx-auto  pt-56">
-          <h1 className="text-4xl text-primary">Voting dApp</h1>A platform that
-          gives you access to <br /> a secure polling system. Developed <br />{" "}
-          using blockchain technology.
-        </div>
-        <div className="bg-white p-10 py-32 text-center">
+      <div className="grid xl:grid-cols-2 gap-40 pt-24 whole-bg px-32 gap-y-0.5">
+      
+        <div className="bg-white box-s p-10 py-20 text-center">
           {!pressed ? (
             <div className="card">
-              <Image src={logo} width={150} height={150} alt="" />
-              <h1 className="text-primary text-4xl">
+              <Image src={logo} width={300} height={300} alt="" />
+              <h1 className="t-color text-4xl">
                 <b>Vote3Win</b>
               </h1>
               <div className="mt-10">
-                <label>Network: </label>
+                <label>Network : </label>
                 <select
                   className="form-select appearance-none
                             block
@@ -102,7 +99,7 @@ function Login() {
                   <option value={80001}>Matic Mumbai</option>
                 </select>
               </div>
-              <Button className="my-4" onClick={handleClick}>
+              <Button className=" b-color my-4" onClick={handleClick}>
                 {loading
                   ? "Connecting Securely..."
                   : "Connect to Metamask Wallet"}
@@ -110,12 +107,12 @@ function Login() {
               {error && (
                 <div className="text-red-500 text-sm mb-10">{error}</div>
               )}
-              <p className="uppercase">
+              {/* <p className="uppercase">
                 Login securely{" "}
                 <Link href="#">
                   <a className="text-primary">Here</a>
                 </Link>
-              </p>
+              </p> */}
             </div>
           ) : (
             <div className="card flex flex-col justify-center items-center">
@@ -123,13 +120,28 @@ function Login() {
               <CheckCircle
                 width={80}
                 height={80}
-                className="text-primary my-5"
+                className="p-color my-5"
                 strokeWidth={1}
               />
               <br />
               <Button disabled>Connected</Button>
             </div>
           )}
+        </div>
+        <div className="pb-8 m xl:px-10 mx-auto">
+          <Image
+            src={people_voting}
+            width={1000}
+            height={500}
+            alt="People Voting Scene"
+          />
+          <div className="p-3">
+            <h1 className="text-4xl text-white mb-2">Voting dApp</h1>
+            <p className="text-white">
+              A blockchain technology developed platform, which gives you access
+              to a more secured polling system.
+            </p>
+          </div>
         </div>
       </div>
     </>

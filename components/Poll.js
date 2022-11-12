@@ -26,11 +26,11 @@ function Poll({
                 <div>{poll.closed ? <Lock/> : <Unlock/>}</div>
             </div>
 
-            <div className="flex justify-between items-center mb-4">
-                <div className="text-xs w-2/5">
+            <div className="flex justify-content-center items-center mb-4">
+                {/* <div className="text-xs w-2/5">
                     <span className="text-gray-400 uppercase block">Voted</span>
                     <span className={`font-bold text-${poll.voted ? "success": "pink"}`}>{poll.voted ?  "Voted" : "Not Voted"}</span>
-                </div>
+                </div> */}
                 <div className="text-xs w-2/5">
                     <span className="text-gray-400 uppercase block">duration</span>
                     <span className={`font-bold text-${poll.duration === "Expired" ? "pink": "success"}`}>{poll.duration}</span>
@@ -54,10 +54,10 @@ function Poll({
                     <span className="text-gray-400 uppercase block">no of votes</span>
                     <span className="font-bold">{poll.votes}</span>
                 </div>
-                <div className="text-xs w-2/5">
+                {/* <div className="text-xs w-2/5">
                     <span className="text-gray-400 uppercase block">fee</span>
                     <span className="font-bold">{poll.fee}</span>
-                </div>
+                </div> */}
             </div>
 
             {!last && <hr className="mb-10"/>}

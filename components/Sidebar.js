@@ -4,13 +4,7 @@ import Link from "next/link";
 import logo from "../public/svg/logo.svg";
 import Image from "next/image";
 import { TemplateIcon } from "@heroicons/react/outline";
-import {
-  Moon,
-  Clock,
-  Edit,
-  LogOut,
-  AlignLeft,
-} from "react-feather";
+import { Moon, Clock, Edit, LogOut, AlignLeft } from "react-feather";
 import SidebarItem from "./SidebarItem";
 import { CreatePoll, FillPoll, History } from "./Icons";
 import Header from "./Header";
@@ -18,25 +12,32 @@ import Toggler from "./Toggler";
 
 export const routes = [
   {
-    name: "Dashboard",
+    name: "Home",
     path: "/dashboard",
-    icon: <TemplateIcon width={25} height={25} className="text-gray-400" strokeWidth={1} />,
+    icon: (
+      <TemplateIcon
+        width={25}
+        height={25}
+        className="text-400"
+        strokeWidth={1}
+      />
+    ),
     toggle: null,
   },
   {
-    name: "Create a Poll",
+    name: "New Poll",
     path: "/create-poll",
     icon: CreatePoll,
     toggle: null,
   },
   {
-    name: "Fill a Poll",
+    name: "Vote",
     path: "/fill-poll",
     icon: FillPoll,
     toggle: null,
   },
   {
-    name: "Poll History",
+    name: "Previous Polls",
     path: "/poll-history",
     icon: History,
     toggle: null,
@@ -50,7 +51,7 @@ function Sidebar() {
       <nav
         className={
           (collapseShow && "active ") +
-          " transition-all sidebar justify-between flex flex-col left-0 fixed top-0 bottom-0 overflow-hidden shadow-xl bg-white w-74 z-10 py-4 px-6 pr-16"
+          " transition-all sidebar justify-between flex flex-col left-0 fixed top-0 bottom-0 overflow-hidden shadow-xl bg-white w-74 z-10 py-4 px-6 pr-16 whole-bg"
         }
       >
         <div>
@@ -59,7 +60,7 @@ function Sidebar() {
             <Link href="/">
               <a className="text-primary flex items-center font-bold">
                 <Image src={logo} width={80} height={80} />
-                Votechain
+                Vote3Win
               </a>
             </Link>
 
