@@ -36,3 +36,5 @@ yarn-error.log*
 cache/
 artifacts/
 package-lock.json
+
+.env

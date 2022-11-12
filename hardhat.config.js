@@ -1,3 +1,7 @@
+// require('dotenv').config();
+const dotenv = require("dotenv");
+dotenv.config({path: __dirname + '/.env'});
+const { PRIVATE_KEY } = process.env;
 require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -16,7 +20,12 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-const privateKey = "01234567890123456789";
+// const privateKey = new Buffer(process.env.["PRIVATE_KEY"], "hex"));
+var privateKey = `0x${PRIVATE_KEY}`
+
+
+
+// const privateKey = "70e05ead1595c72e4610f1c51d72817e81d28ff8481fefde11328bdcbcd89215";
 module.exports = {
   solidity: "0.8.4",
   defaultNetwork: "hardhat",
@@ -24,10 +33,10 @@ module.exports = {
     hardhat: {
       chainId: 1337,
     },
-    harmonytestnet: {
-      url: `https://api.s0.b.hmny.io`,
-      accounts: [privateKey],
-    },
+    // harmonytestnet: {
+    //   url: `https://api.s0.b.hmny.io`,
+    //   accounts: [privateKey],
+    // },
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com/",
       chainId: 80001,
