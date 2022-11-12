@@ -1,7 +1,5 @@
 import LightningIcon from "../public/svg/lightning.svg";
 import FillPollIcon from "../public/svg/Fill Poll Icon.svg";
-import VoteChainHorizontalIcon from "../public/svg/Votechain Logo.png";
-import LoginIcon from "../public/svg/Login.png";
 import HistoryIcon from "../public/svg/time.svg";
 import DashboardIcon from "../public/svg/Dashboard Icon.svg";
 import ToggleIcon from "../public/svg/Toggle Button.svg";
@@ -17,10 +15,6 @@ import RadioSelectedIcon from "../public/svg/radio-selected.svg";
 import Image from "next/image";
 
 export const Lightning = <Image src={LightningIcon} alt="" />;
-export const VoteChainHorizontal = (
-  <Image src={VoteChainHorizontalIcon} width={150} height={80} alt="" />
-);
-export const Login = <Image src={LoginIcon} alt="" />;
 export const Logo = <Image src={LogoIcon} alt="" />;
 export const BarChartCircle = <Image src={BarChartCircleIcon} alt="" />;
 export const RadialSmall = <Image src={RadialSmallIcon} alt="" />;
