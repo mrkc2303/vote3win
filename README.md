@@ -13,3 +13,15 @@
 * All the data is decentralized so it is no more susceptible data breach.
 * It will make voting more accessible as the citizens are no longer required to travel somewhere to vote.
 * As all the data is stored on blockchain it will bring more trust, transparency and validity in voting system.
+
+# screenshots
+![image](https://user-images.githubusercontent.com/82977727/201510405-e7fd4afc-2bb1-4c27-8d66-3334775e42e5.png)
+![image](https://user-images.githubusercontent.com/82977727/201510453-652bbdd6-bfda-4f96-9d1e-d69549bbeeac.png)
+![image](https://user-images.githubusercontent.com/82977727/201510483-06018a34-10a2-4972-9ae6-e6ae7a0e5ee9.png)
+![image](https://user-images.githubusercontent.com/82977727/201510509-9a4c97b1-4f39-47cd-809a-1c6cd7ac04ba.png)
+![image](https://user-images.githubusercontent.com/82977727/201510538-3845be7a-60f1-4ae9-9927-ea7d518a4a41.png)
+![image](https://user-images.githubusercontent.com/82977727/201510548-c5039b57-8b38-476a-8baa-1f7b6d39294b.png)
+![image](https://user-images.githubusercontent.com/82977727/201510560-0c296a08-3208-48a3-84ae-79120f083d1c.png)
+
+  
+
